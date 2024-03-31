@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>StarBank</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    </head>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+            <h1>Star<span>Bank</span></h1>
+        </div>
+        <div class="nav-options">
+            <p>For you </p>
+            <div class="bar-for"></div>
+            <p> For your company</p>
+        </div>
+        <div class="bar"></div>
+        <div class="input-header">
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+        <div class="account">
+            <a href="login.html"><button>My account</button></a>
+        </div>
+    </header>
+
+    <div class="superior">
+        <a href="index.html">
+            <p>For customer</p>
+        </a>
+        <a href="invests.html">
+            <p>Investments</p>
+        </a>
+        <p>Agencies</p>
+        <a href="products.html">
+            <p>Products and services</p>
+        </a>
+        <p>Open finance</p>
+    </div>
+
+    <div class="banner">
+        <div class="gradient-banner"></div>
+        <video src="videos/starry video.mp4" type="video/mp4" loop muted id = "autoplay"></video>
+    </div>
+
+    <div class="inform">
+        <div class="title-starbank">
+            <h1>The bank of the banks. It's Star<span>Bank.</span></h1>
+        </div>
+        <div class="outlook">
+            <h1>Economic Outlook</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        <div class="lateral-out">
+            <div class="buttons-lateral-out">
+                <div><h1>Instant Payment</h1></div>
+                <br>
+                <div><img src="assets/payment.svg" alt=""></div>
+            </div>
+            <div class="buttons-lateral-out">
+                <div><h1>Debt Review</h1></div>
+                <div><img src="assets/debt.svg" alt=""></div>
+            </div>
+            <div class="buttons-lateral-out">
+                <div><h1>2nd Payslip</h1></div>
+                <div><img src="assets/payslip.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit-card-banner">
+        <div class="conheca">
+            <h1>Discover our credit card</h1>
+            <p>Benefits, investments, promotions and last-minute news, now in your hands.</p>
+        </div>
+        <div class="credit-card">
+            <div class="first">
+                <img src="assets/visa.svg" alt="">
+            </div>
+            <div class="second">
+                <div class="chip"><img class="chipr" src="assets/chip.png" alt=""></div>
+                <div class="aproxima"><img class="aproximar" src="assets/wireless.svg" alt=""></div>
+            </div>
+            <div class="third">
+                <p>1234 5678 2345 4567</p>
+            </div>
+            <div class="fourth">
+                <h3>Arcturo Linsey</h3>
+                <h3>12/26</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="enter-market">
+        <div class="enterprise">
+            <div class="enter-image">
+                <img src="assets/enterprise.svg" alt="">
+            </div>
+            <div class="enter-text">
+                <h1>StarBank for Enterprise</h1>
+                <p>Services designed to help your company in all areas of the business.</p>
+            </div>
+            <div class="enter-button">About</div>
+        </div>
+
+        <div class="mercados-financeiros">
+            <h1 class="markets">Financial Markets</h1>
+            <div class="monetario">
+                <div class="mon-card">
+                    <img src="images/monetario.svg" alt="">
+                    <h1>Money Market</h1>
+                    <p>Very short-term operations with public securities. 
+                        Control of the economy's liquidity.
+                    </p>
+                </div>
+                <button>View more</button>
+            </div>
+            <div class="monetario">
+                <div class="mon-card">
+                    <img src="images/cambial.svg" alt="">
+                    <h1>Exchange Market</h1>
+                    <p>Foreign currency purchase and sale transactions. 
+                        Divided into primary and secondary market.
+                    </p>
+                </div>
+                <button>View more</button>
+            </div>
+            <div class="monetario">
+                <div class="mon-card">
+                    <img src="images/capitais.svg" alt="">
+                    <h1>Capital Market</h1>
+                    <p>Stock market (stock exchange), participation in 
+                        debt instruments such as debentures and promissory 
+                        notes. Divided into primary and secondary market.
+                    </p>
+                </div>
+                <button>View more</button>
+            </div>
+            <div class="monetario">
+                <div class="mon-card">
+                    <img src="images/credito.svg" alt="">
+                    <h1>Credit Market</h1>
+                    <p>Loan operations granted by financial institutions. 
+                        Intended for consumption or for companies working capital.
+                    </p>
+                </div>
+                <button>View more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit-image">
+        <h1>StarBank</h1>
+        <h6>make dreams come true.</h6>
+    </div>
+
+    <div class="credit-simulator">
+        <div class="credit-title">
+            <h1>Credit Simulator</h1>
+        </div>
+        <div class="credit-form">
+            <div class="credit-select">
+                <select id="parameters" onchange = "getValue()">
+                    <option value="0">Your objective:</option>
+                    <option value="House">House</option>
+                    <option value="Car">Car</option>
+                    <option value="Health">Health</option>
+                    <option value="College">College</option>
+                </select>
+            </div>
+            <br>
+            <input type="number" placeholder="How much U$$" id="quantidade">
+            <br>
+            <p>StarBank <span>prime</span> customer?</p>
+            <br>
+            <div class="credit-select">
+                <select id="selected">
+                    <option value="">Choose:</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br>
+            <button onclick="showResult()" id="submit-invest">Submit investment</button>
+        </div>
+    </div>
+
+    <div id="credit-result">
+        <div class="credit-title">
+            <h1>Credit Simulator <span>Result</span></h1>
+        </div>
+        <div class="result-form">
+            <p>Your option: <span id="optionCred"></span></p>
+            <br>
+            <p>Total investment + taxes: <span class="result-h1" id="resultRebate"></span></p> 
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cont-logo">
+                <h1>Star<span>Bank</span></h1>
+            </div>
+            <div class="cont-column">
+                <h1>Download</h1>
+                <p>Windows app</p>
+                <p>Mac app</p>
+                <p>Linux app</p>
+                <p>Desktop app</p>
+            </div>
+            <div class="cont-column">
+                <h1>Products</h1>
+                <p>Open finance</p>
+                <p>Capitalization</p>
+                <p>Investments</p>
+                <p>Credit market</p>
+            </div>
+            <div class="cont-double">
+                <div class="social-media">
+                    <img src="assets/twitter-svgrepo-com.svg" alt="">
+                    <img src="assets/linkedin-svgrepo-com.svg" alt="">
+                    <img src="assets/instagram-svgrepo-com.svg" alt="">
+                </div>
+                <div class="social-input">
+                    <input type="text" placeholder="Enter e-mail address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="showResult.js"></script>
+    <script src="yesno.js"></script>
+    <script src="autoplay.js"></script>
+
+</html>

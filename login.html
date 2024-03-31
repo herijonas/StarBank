@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>StarBank</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    </head>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+            <h1>Star<span>Bank</span></h1>
+        </div>
+        <div class="nav-options">
+            <p>For you </p>
+            <div class="bar-for"></div>
+            <p> For your company</p>
+        </div>
+        <div class="bar"></div>
+        <div class="input-header">
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+        <div class="account">
+            <a href="login.html"><button>My account</button></a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="superior">
+            <a href="index.html">
+                <p>For customer</p>
+            </a>
+            <a href="invests.html">
+                <p>Investments</p>
+            </a>
+            <p>Agencies</p>
+            <a href="products.html">
+                <p>Products and services</p>
+            </a>
+            <p>Open finance</p>
+        </div>
+
+        <div class="img-acc">
+            <img src="images/5040007.jpg" alt="">
+        </div>
+
+        <div id="log-cont">
+            <div class="login">
+                <h1>LOGIN</h1>
+                <form>
+                    <div class="inputField">
+                        <label class="fit-p">CPF or CNPJ</label>
+                        <input name="CPF" class="" placeholder="XXX.XXX.XXX-XX" />
+                        <p class="error error-hidden">CPF or CNPJ is required</p>
+                    </div>
+                    <div class="inputField">
+                        <label class="fit-p">Password</label>
+                        <input
+                            type="password"
+                            name="Password"
+                            class=""
+                            placeholder="Eight characters"
+                            maxlength="8"
+                        />
+                        <p class="error error-hidden">Password is invalid</p>
+                    </div>
+                    <p class="esqueci">Forgot my password</p>
+                    <button onclick="validation()">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="dashboard error-hidden">
+            <div class="dash-title">
+                <h1>Dashboard</h1>
+            </div>
+            <hr>
+            <div class="dash-card">
+                <div class="dash-options">
+                    <button>My profile</button>
+                    <button>Statement</button>
+                    <button>Investments</button>
+                    <button>Payment list</button>
+                    <button>Consultancy</button>
+                </div>
+                <div class="dash-lateral">
+                    <div class="lateral-cima">
+                        <div class="profile">
+                            <img src="assets/user-svgrepo-com.svg" alt="">
+                            <p>Welcome,</p>
+                            <br>
+                            <span>- - - - - -</span>
+                        </div>
+                        <div class="sale">
+                            <div>
+                                <p>Show balance</p> 
+                                <img src="assets/eye-svgrepo-com.svg" alt="">
+                            </div>
+                            <br>
+                            <hr>
+                            <span>*****</span>
+                        </div>
+                        <div class="my-credit">
+                            <span>My credit card</span>
+                            <br>
+                            <hr>
+                            <p>Model: </p>
+                            <img src="assets/visa.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="lateral-baixo">
+                        <div class="last-buys">
+                            <h1>Last purchases</h1>
+                            <br>
+                            <div class="purchase">
+                                <div class="purchase-p">
+                                    <p>iPhone consortium StarBank - - <span>U$912.17</span></p>
+                                </div>
+                                <div class="purchase-button">
+                                    <button>About</button>
+                                </div>
+                            </div>
+                            <div class="purchase">
+                                <div class="purchase-p">
+                                    <p>Walmart Inc - - <span>U$122.98</span></p>
+                                </div>
+                                <div class="purchase-button">
+                                    <button>About</button>
+                                </div>
+                            </div>
+                            <div class="purchase">
+                                <div class="purchase-p">
+                                    <p>England passport authorization - - <span>U$1480.34</span></p>
+                                </div>
+                                <div class="purchase-button">
+                                    <button>About</button>
+                                </div>
+                            </div>
+                            <div class="purchase">
+                                <div class="purchase-p">
+                                    <p>Amazon "The Wizard of Orion" book - - <span>U$15.60</span></p>
+                                </div>
+                                <div class="purchase-button">
+                                    <button>About</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cont-logo">
+                <h1>Star<span>Bank</span></h1>
+            </div>
+            <div class="cont-column">
+                <h1>Download</h1>
+                <p>Windows app</p>
+                <p>Mac app</p>
+                <p>Linux app</p>
+                <p>Desktop app</p>
+            </div>
+            <div class="cont-column">
+                <h1>Products</h1>
+                <p>Open finance</p>
+                <p>Capitalization</p>
+                <p>Investments</p>
+                <p>Credit market</p>
+            </div>
+            <div class="cont-double">
+                <div class="social-media">
+                    <img src="assets/twitter-svgrepo-com.svg" alt="">
+                    <img src="assets/linkedin-svgrepo-com.svg" alt="">
+                    <img src="assets/instagram-svgrepo-com.svg" alt="">
+                </div>
+                <div class="social-input">
+                    <input type="text" placeholder="Enter e-mail address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="validation.js"></script>
+
+</html>

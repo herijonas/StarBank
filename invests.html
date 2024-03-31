@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>StarBank</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    </head>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+            <h1>Star<span>Bank</span></h1>
+        </div>
+        <div class="nav-options">
+            <p>For you</p>
+            <div class="bar-for"></div>
+            <p>For your company</p>
+        </div>
+        <div class="bar"></div>
+        <div class="input-header">
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+        <div class="account">
+            <button>My account</button>
+        </div>
+    </header>
+
+    <div class="superior">
+        <a href="index.html">
+            <p>For customer</p>
+        </a>
+        <a href="invests.html">
+            <p>Investments</p>
+        </a>
+        <p>Agencies</p>
+        <a href="products.html">
+            <p>Products and services</p>
+        </a>
+        <p>Open finance</p>
+    </div>
+
+    <body>
+
+        <div class="invests-banner">
+            <div class="invests-text">
+                <h1>Investments</h1>
+                <h4>Invest in your dreams, your way, with zero complications</h4>
+                <h6>Real Estate, Brazilian Treasury, Funds? At StarBank, you invest your way and 
+                    receive help from our experts at all times, with personalized 
+                    suggestions focused on your profile and objectives.
+                </h6>
+                <button>Invest now</button>
+            </div>
+            <div class="invests-options">
+                <button>Equity Funds</button>
+                <button>Real Estate</button>
+                <a href="#etf-invest"><button>ETFs</button></a>
+                <button>Brazilian Treasury</button>
+                <button>Social Security</button>
+            </div>
+        </div>
+
+        <div class="line-detail"></div>
+
+        <div class="rodape-image">
+            <img src="images/capitais alt.png" alt="">
+        </div>
+
+        <div class="rodape">
+            <div class="recomendado1">
+                <div class="titulo-rod">
+                    <h1>StarBank+ <span>preference </span>debenture</h1>
+                    <div>ON FIRE</div>
+                </div>
+                <div class="imagem-rod">
+                    <img src="assets/star debenture.svg" alt="">
+                    <div class="kjkl">
+                        <div class="kjko">
+                            <p class="price">U$$ 67.89</p>
+                            <p class="tax">9,67% a.a</p>
+                        </div>
+                        <p class="bids">*starting bids*</p>
+                        <p>Model: ordinary</p>
+                        <p>Minimum time: 2 years</p>
+                    </div>
+                </div>
+                <div class="botoes-rod">
+                    <button>BUY</button>
+                    <button>SELL</button>
+                </div>
+            </div>
+            <div class="recomendado">
+                <div class="titulo-rod">
+                    <h1>WEG2 for <span>ordinary </span>coupon</h1>
+                </div>
+                <div class="imagem-rod">
+                    <img src="assets/weg2.png" alt="">
+                    <div class="kjkl">
+                        <div class="kjko">
+                            <p class="price">U$$ 67.89</p>
+                            <p class="tax">9,67% a.a</p>
+                        </div>
+                        <p class="bids">*starting bids*</p>
+                        <p>Model: ordinary</p>
+                        <p>Minimum time: 2 years</p>
+                    </div>
+                </div>
+                <div class="botoes-rod">
+                    <button>BUY</button>
+                    <button>SELL</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="two-invest">
+
+            <div id="bt-invest">
+                <div class="schedule">
+                    <div class="sch-title">
+                        <img src="assets/real-estate.svg" alt="" class="images">
+                        <h1 id="h1-brazil">Real Estate</h1>
+                    </div>
+                    <div class="sch-value">
+                        <label for="quantiaInicial">Initial amount: </label> 
+                        <input type="number" id="quantiaInicial" min="0" value="none" placeholder="U$$">
+                    </div>
+                    <div class="sch-value1">
+                        <label for="tempoDeposito">Deposit time (months): </label>
+                        <input type="range" id="tempoDeposito" min="1" max="36" value="1"> 
+                        <span id="tempo-num"></span>
+                    </div>
+                    <div class="line-detail"></div>
+                    <div class="sch-taxes">
+                        <h3>Total amount: <span id="ganhoTotal"></span></h3> 
+                        <p>Government taxes: <span id="taxasGov"></span></p> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="etf-invest">
+                <div class="schedule">
+                    <div class="sch-title">
+                        <img src="assets/etf.svg" alt="" class="images">
+                        <h1 id="h1-brazil">ETFs</h1>
+                    </div>
+                    <div class="etfs-buttons">
+                        <a href="etf-invest.html"><button>IVVB11</button></a>
+                        <a href="etf-invest.html"><button>BOVA11</button></a>
+                        <a href="etf-invest.html"><button>SPXI11</button></a>
+                        <a href="etf-invest.html"><button>EURP11</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="two-invest">
+
+            <div id="bt-invest-sec">
+                <div class="schedul-sec">
+                    <div class="sch-title">
+                        <img src="assets/security.svg" alt="" class="images">
+                        <h1 id="h1-brazil">Social Security</h1>
+                    </div>
+                    <div class="sch-value">
+                        <label for="quantiaInicial">Mensal amount: </label> 
+                        <input type="number" id="quantiasInicial" min="0" value="none" placeholder="U$$">
+                    </div>
+                    <div class="sch-value1">
+                        <label for="tempoDeposito">Deposit time (years): </label>
+                        <input type="range" id="temposDeposito" min="1" max="60" value="1"> 
+                        <span id="tempos-num"></span>
+                    </div>
+                    <div class="line-detail"></div>
+                    <div class="sch-taxes">
+                        <h3>Accumulated: <span id="ganhosTotal"></span></h3> 
+                        <p>Government taxes: <span id="taxassGov"></span></p> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="etf-invest-bra">
+                <div class="schedule">
+                    <div class="sch-title">
+                        <img src="assets/brazil.svg" alt="" class="brazil">
+                        <h1 id="h1-brazil"><span>Brazilian</span> Treasury</h1>
+                    </div>
+                    <div class="etfs-buttons">
+                        <div class="special-brazil">
+                            <h1>Seguridade garantida</h1>
+                        </div>
+                        <div class="special-brazil">
+                            <h1>Taxa de 10,75% a.a</h1>
+                        </div>
+                        <div class="special-brazil">
+                            <h1>Regulado pelo Banco Central</h1>
+                        </div>
+                        <div class="special-brazil">
+                            <h1>Flutuação cambial</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cont-logo">
+                <h1>Star<span>Bank</span></h1>
+            </div>
+            <div class="cont-column">
+                <h1>Download</h1>
+                <p>Windows app</p>
+                <p>Mac app</p>
+                <p>Linux app</p>
+                <p>Desktop app</p>
+            </div>
+            <div class="cont-column">
+                <h1>Products</h1>
+                <p>Open finance</p>
+                <p>Capitalization</p>
+                <p>Investments</p>
+                <p>Credit market</p>
+            </div>
+            <div class="cont-double">
+                <div class="social-media">
+                    <img src="assets/twitter-svgrepo-com.svg" alt="">
+                    <img src="assets/linkedin-svgrepo-com.svg" alt="">
+                    <img src="assets/instagram-svgrepo-com.svg" alt="">
+                </div>
+                <div class="social-input">
+                    <input type="text" placeholder="Enter e-mail address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="taxes.js"></script>
+    <script src="social-security.js"></script>
+
+</html>

@@ -1,0 +1,2112 @@
+* {
+    padding: 0;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background: rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+body {
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(9, 28, 44) 0%, rgb(4, 69, 93) 90%);
+}
+
+main {
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(9, 28, 44) 0%, rgb(4, 69, 93) 90%);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin: 20px;
+}
+
+.logo img {
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 66, 152);
+}
+
+.logo h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+    margin-left: 24px;
+}
+
+.logo span {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 66, 152);
+}
+
+.nav-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-options p {
+    margin-right: 20px;
+    font-size: 18px;
+    color: rgb(0, 66, 152);
+    font-family: sans-serif;
+}
+
+.bar-for {
+    margin-left: 10px;
+    margin-right: 25px;
+    width: 2px;
+    height: 20px;
+    background: rgb(0, 66, 152);
+}
+
+.nav-options p:hover {
+    cursor: pointer;
+    color: rgb(0, 101, 232);
+}
+
+.bar {
+    width: 2px;
+    height: 150px;
+    background-color: rgb(51, 51, 51);
+}
+
+.input-header input {
+    width: 290px;
+    height: 40px;
+    border: 2px solid rgb(0, 66, 152);
+    border-radius: 25px;
+    color: black;
+    font-size: inherit;
+    padding-left: 10px;
+    outline: none;
+}
+
+.account a {
+    text-decoration: none;
+}
+
+.account button {
+    transition: 0.15s;
+    width: 170px;
+    height: 40px;
+    background: rgb(0, 66, 152);
+    color: white;
+    border: none;
+    font-size: inherit;
+}
+
+.account button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: rgb(0, 101, 232);
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgb(0, 66, 152);
+}
+
+.superior a {
+    text-decoration: none;
+}
+
+.superior p {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.superior p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.img-acc {
+    width: 100%;
+}
+
+.img-acc img {
+    width: 100%;
+    position: relative;
+}
+
+#log-cont {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    background: none;
+    padding-top: 30px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -620px;
+}
+
+.login {
+    display: block;
+    width: 380px;
+    height: 410px;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 25px;
+    background: none;
+    margin-bottom: 100px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.login h1 {
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fit-p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.esqueci {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.esqueci:hover {
+    color: rgb(134, 134, 134);
+    cursor: pointer;
+}
+
+.error {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    margin-top: 5px;
+    margin-left: 18px;
+}
+
+.error-hidden {
+    display: none;
+}
+
+/*----VALIDATION.JS----*/
+
+.inputField {
+    margin-top: 40px;
+}
+
+.inputField input {
+    width: 320px;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 20px;
+    outline: none;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    margin-top: 5px;
+    background: none;
+}
+  
+.invalid {
+    border: 2px solid red;
+}
+  
+.error-hidden {
+    display: none;
+}
+
+.thanks {
+    position: absolute;
+    z-index: 1;
+    margin-top: -400px;
+    padding: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login button {
+    transition: 0.15s;
+    width: 170px;
+    height: 40px;
+    background: rgb(0, 66, 152);
+    color: white;
+    border: none;
+    font-size: inherit;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.login button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: rgb(0, 101, 232);
+}
+
+.dashboard {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgb(14,41,71);
+    background: linear-gradient(0deg, rgba(14,41,71,1) 37%, rgba(9,22,54,1) 79%);
+    margin-top: -5px;
+}
+
+.dash-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: none;
+    border-top: 2px solid white;
+    display: flex;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12px;
+}
+
+.dash-card {
+    display: flex;
+}
+
+.dash-options {
+    display: block;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 350px;
+    margin-left: 90px;
+}
+
+.dash-options button {
+    width: 200px;
+    height: 45px;
+    background: rgb(0,60,152);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: inherit;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.dash-options button:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: 0.5;
+}
+
+.dash-lateral {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.lateral-cima {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.lateral-cima span {
+    color: rgb(0, 167, 228);
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 156px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 26px;
+    margin: 12px;
+}
+
+.profile img {
+    width: 35px;
+    margin-right: -10px;
+}
+
+.sale,
+.my-credit {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 156px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 26px;
+    margin: 12px;
+}
+
+.my-credit span,
+.sale span {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.my-credit p,
+.sale p {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sale div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sale img {
+    width: 28px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+.sale img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.my-credit img {
+    width: 65px;
+    margin-left: 30px;
+}
+
+.dashboard hr,
+.my-credit hr,
+.sale hr {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background: white;
+}
+
+.lateral-baixo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.lateral-baixo span {
+    color: greenyellow;
+}
+
+.purchase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.purchase-p {
+    margin-left: 0;
+}
+
+.purchase-button {
+    margin-right: 70px;
+}
+
+.purchase-button button {
+    width: 90px;
+    height: 36px;
+    color: black;
+    background: white;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+.purchase-button button:hover {
+    cursor: pointer;
+    background: rgb(142, 142, 142);
+}
+
+.gradient-banner {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background: rgb(13,29,62);
+    background: linear-gradient(0deg, rgba(13,29,62,0.8772759103641457) 21%, rgba(255,255,255,0) 100%);
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.inform {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    margin-top: -250px;
+    margin-left: 78px;
+    background: rgb(217, 217, 217);
+    background: radial-gradient(circle, rgba(217,217,217,1) 17%, rgba(252,252,252,1) 100%);
+    border: 4px solid rgb(0, 66, 152);
+    border-radius: 10px;
+}
+
+.title-starbank {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    background: none;
+    margin-top: -680px;
+}
+
+.title-starbank h1 {
+    font-size: 36px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.title-starbank span {
+    color: rgb(0, 66, 152);
+    filter: brightness(2);
+}
+
+.outlook {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 85px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+.outlook h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: rgb(0, 66, 152);
+    font-weight: bold;
+}
+
+.outlook p {
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+    font-family: sans-serif;
+    max-width: 328px;
+    margin-top: 20px;
+    text-align: justify;
+    margin-left: 2px;
+}
+
+.lateral-out {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons-lateral-out {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.buttons-lateral-out:hover {
+    cursor: pointer;
+    box-shadow: rgb(0, 84, 162) 0px 5px 15px;
+}
+
+.buttons-lateral-out h1 {
+    text-align: center;
+    font-size: 22px;
+    color: rgb(0, 66, 152);
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.buttons-lateral-out img {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    margin-top: 20px;
+}
+
+.credit-card-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(9, 28, 44) 0%, rgb(4, 69, 93) 90%);
+    margin-top: -5px;
+    padding-top: 190px;
+}
+
+.conheca {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    max-width: 550px;
+}
+
+.conheca h1 {
+    font-size: 45px;
+    color: rgb(0, 110, 255);
+    font-family: sans-serif;
+}
+
+.conheca p {
+    font-size: 22px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.credit-card {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(to top, #081527 0%, #1985d7 100%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.18s;
+}
+
+.credit-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.first img {
+    width: 75px;
+    margin-left: 280px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chipr {
+    width: 70px;
+}
+
+.aproximar {
+    width: 54px;
+    margin-left: 130px;
+}
+
+.third p {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 18px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    word-spacing: 12px;
+}
+
+.fourth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourth h3 {
+    font-size: 16px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+}
+
+.enter-market {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding-top: 50px;
+}
+
+.enterprise {
+    width: 85%;
+    border: 3px solid rgb(0, 66, 152);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.enter-image {
+    margin-left: 95px;
+}
+
+.enter-image img {
+    width: 110px;
+    filter: contrast(2);
+}
+
+.enter-text {
+    margin-left: -120px;
+}
+
+.enter-text h1 {
+    font-size: 30px;
+    color: rgb(0, 66, 152);
+    font-family: sans-serif;
+}
+
+.enter-text p {
+    font-size: 18px;
+    color: rgb(56, 56, 56);
+    font-family: sans-serif;
+    text-align: justify;
+    max-width: 290px;
+    margin-left: 0;
+}
+
+.enter-button {
+    width: 190px;
+    height: 42px;
+    background: linear-gradient(to top, #0d3a79 0%, #1985d7 100%);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter-button:hover {
+    background: linear-gradient(to top, #062148 0%, #103f63 100%);
+    cursor: pointer;
+}
+
+.mercados-financeiros {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    width: 100%;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+}
+
+.markets {
+    font-size: 30px;
+    color: rgb(0, 66, 152);
+    font-family: sans-serif;
+    font-weight: bold;
+    max-width: 50px;
+    padding-right: 30px;
+}
+
+.monetario {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.mon-card {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 290px;
+    border: 2px solid rgb(0, 66, 152);
+    border-radius: 6px;
+    transition: 0.2s;
+    background: none;
+}
+
+.mon-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.mon-card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.mon-card h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: rgb(0, 66, 152);
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.mon-card p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(41, 41, 41);
+    font-family: sans-serif;
+    text-align: justify;
+    max-width: 220px;
+}
+
+.monetario button {
+    width: 190px;
+    height: 42px;
+    background: linear-gradient(to top, #0d3a79 0%, #1985d7 100%);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 24px;
+}
+
+.monetario button:hover {
+    background: linear-gradient(to top, #062148 0%, #103f63 100%);
+    cursor: pointer;
+}
+
+.credit-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(6, 42, 71) 0%, rgb(18, 90, 116) 90%);
+}
+
+.credit-image h1 {
+    padding-left: 50px;
+    opacity: 0.8;
+    padding-top: 290px;
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.credit-image h6 {
+    padding-left: 50px;
+    font-size: 38px;
+    color: rgb(0, 68, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.credit-simulator {
+    width: 100%;
+    background: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-left: 850px;
+    margin-top: -500px;
+}
+
+.credit-title {
+    margin: 10px;
+    margin-left: 16px;
+}
+
+.credit-title h1 {
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.credit-form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin: 10px;
+}
+
+.credit-form input {
+    width: 300px;
+    height: 45px;
+    background: none;
+    color: white;
+    font-size: inherit;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 68, 255);
+    margin-bottom: 30px;
+}
+
+.credit-form p {
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.credit-form span {
+    font-size: 16px;
+    color: rgb(255, 221, 0);
+    font-family: sans-serif;
+}
+
+.credit-form button {
+    width: 260px;
+    height: 39px;
+    color: black;
+    font-size: inherit;
+    background: white;
+    border: none;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.credit-form button:hover {
+    cursor: pointer;
+    background: rgb(190, 190, 190);
+}
+
+.credit-select {
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 24px;
+}
+
+.credit-select select {
+    width: 260px;
+    font-size: 1.15rem;
+    padding: 10px;
+    background: rgb(101,193,255);
+    background: radial-gradient(circle, rgba(101,193,255,1) 37%, rgba(9,128,255,1) 79%);
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+#selected {
+    width: 260px;
+    font-size: 1.15rem;
+    padding: 10px;
+    background: rgb(255,212,101);
+    background: radial-gradient(circle, rgba(255,212,101,1) 37%, rgba(255,219,9,1) 79%);
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+#credit-result {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top: 2px solid whitesmoke;
+    width: 100%;
+    padding: 30px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(194, 181, 0) 0%, rgb(230, 255, 149) 90%);
+}
+
+.result-form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin: 10px;
+}
+
+.result-form p {
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.prime-user {
+    font-size: 16px;
+    color: rgb(255, 221, 0);
+    font-family: sans-serif;
+}
+
+.result-h1,
+#optionCred {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    color: rgb(0, 120, 12);
+    margin-left: 10px;
+    filter: contrast(3);
+}
+
+.padd {
+    width: 100%;
+    padding-top: 500px;
+    background: black;
+}
+
+
+
+/*INVESTS.HTML*/
+
+
+
+.invests-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.invests-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+}
+
+.invests-text h1 {
+    font-size: 40px;
+    color: rgb(251, 255, 0);
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.invests-text h4 {
+    font-size: 28px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.invests-text h6 {
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.invests-text button {
+    width: 280px;
+    height: 46px;
+    margin-top: 20px;
+    background-color: rgb(0, 66, 152);
+    color: white;
+    border: none;
+    font-size: inherit;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.invests-text button:hover {
+    background-color: rgb(0, 39, 89);
+    cursor: pointer;
+}
+
+.invests-options {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.invests-options a {
+    text-decoration: none;
+}
+
+.invests-options button {
+    width: 200px;
+    height: 36px;
+    margin-top: 12px;
+    background-color: rgb(251, 255, 0);
+    color: rgb(0, 66, 152);
+    border: none;
+    font-size: inherit;
+    font-weight: bolder;
+}
+
+.invests-options button:hover {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.rodape-image {
+    width: 100%;
+}
+
+.rodape-image img {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    opacity: 0.9;
+    position: relative;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -548px;
+}
+
+.recomendado,
+.recomendado1 {
+    display: block;
+    width: 590px;
+    height: 370px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.titulo-rod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.titulo-rod h1 {
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo-rod span {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 24px;
+    color: gold;
+}
+
+.titulo-rod div {
+    display: grid;
+    place-content: center;
+    width: 100px;
+    height: 25px;
+    font-family: sans-serif;
+    background: rgb(255, 27, 27);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.imagem-rod {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 60px;
+}
+
+.imagem-rod img {
+    width: 130px;
+    background: none;
+    position: relative;
+}
+
+.kjkl {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+    text-align: justify;
+    max-width: 250px;
+}
+
+.kjkl p {
+    margin-bottom: 10px;
+}
+
+.kjko {
+    display: flex;
+    justify-content: space-around;
+}
+
+.price {
+    color: rgb(0, 209, 0); font-size: 28px;
+}
+
+.bids {
+    color: yellow;
+}
+
+.tax {
+    color: rgb(255, 60, 60); font-weight: bold;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.botoes-rod {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 2px solid white;
+}
+
+.botoes-rod button {
+    width: 220px;
+    height: 40px;
+    border: none;
+    overflow: hidden;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-size: inherit;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border: 2px solid transparent;
+}
+
+.botoes-rod button:hover {
+    cursor: pointer;
+    background: rgb(185, 185, 185);
+}
+
+#two-invest {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#bt-invest,
+#bt-invest-sec {
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 30px;
+    width: 596px;
+    height: 320px;
+}
+
+#bt-invest-sec {
+    border: 2px solid rgb(255, 247, 0)
+}
+
+.schedule,
+.schedule-sec {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sch-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.sch-title h1 {
+    display: flex;
+    margin-left: 0;
+    font-size: 50px;
+    color: rgb(60, 187, 255);
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.sch-title h1 span {
+    color: rgb(0, 179, 0);
+}
+
+.images {
+    display: flex;
+    margin-left: 0;
+    width: 100px;
+    filter: brightness(5);
+    margin-top: 10px;
+}
+
+.brazil {
+    display: flex;
+    margin-left: 0;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.sch-value {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 4px;
+    position: absolute;
+}
+
+.sch-value label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.sch-value input {
+    width: 290px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(8, 115, 255);
+    color: rgb(255, 255, 255);
+    font-size: inherit;
+    padding-left: 2px;
+    outline: none;
+    margin-left: 20px;
+}
+
+.sch-value1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 110px;
+    position: relative;
+}
+
+.sch-value1 span {
+    margin-left: 5px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.sch-value1 label {
+    width: 100%;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.sch-taxes {
+    margin-top: 20px;
+}
+
+.sch-taxes h3 {
+    font-size: 20px;
+    color: rgb(0, 176, 50);
+    font-family: sans-serif;
+}
+
+.sch-taxes p {
+    font-size: 20px;
+    color: rgb(15, 119, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.sch-taxes button:hover {
+    border-color: rgb(0, 66, 152);
+    cursor: pointer;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 25rem;
+    margin-left: -70px;
+}
+  
+input[type="range"]:focus {
+    outline: none;
+}
+  
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #0066ff;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -4px; 
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+}
+  
+input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid rgb(255, 255, 255);
+    outline-offset: 0.125rem;
+}
+
+.line-detail {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(139, 189, 255);
+    margin-top: 20px;
+}
+
+#etf-invest,
+#etf-invest-bra {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 30px;
+    border: 2px solid rgb(255, 153, 0);
+    width: 596px;
+    height: 320px;
+}
+
+#etf-invest-bra {
+    border: 2px solid rgb(0, 189, 60);
+}
+
+.etfs-buttons {
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+.etfs-buttons button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid rgb(0, 255, 179);
+    margin: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(0, 255, 179);
+}
+
+.etfs-buttons button:hover {
+    cursor: pointer;
+    border-color: white;
+    color: white;
+}
+
+.special-brazil {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    border: 2px solid rgb(247, 255, 17);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 90px;
+    background: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.special-brazil:hover {
+    cursor: pointer;
+    background: rgb(247, 255, 17);
+    color: black;
+    transition: 0.5s;
+}
+
+.special-brazil h1 {
+    display: grid;
+    place-content: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+
+
+/*ETF-INVEST.HTML*/
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: none;
+}
+
+.card-etf {
+    width: 300px;
+    max-width: 300px;
+    height: 320px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    display: block;
+    justify-content: start;
+    background: rgb(212,232,255);
+    background: linear-gradient(0deg, rgba(212,232,255,1) 37%, rgba(77,129,255,1) 79%);
+    transition: 0.1s;
+}
+
+.card-etf:hover {
+    transform: scale(1.06);
+    transition: 0.4;
+    cursor: pointer;
+}
+
+.etf-title {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.etf-desc {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    text-align: justify;
+    max-width: 250px;
+}
+
+.etf-risk0,
+.etf-risk1,
+.etf-risk2 {
+    display: flex;
+    justify-content: center;
+}
+
+.etf-risk0 span {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100px;
+    height: 25px;
+    font-size: inherit;
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    background: rgb(44, 190, 0);
+}
+
+.etf-risk1 span {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100px;
+    height: 25px;
+    font-size: inherit;
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    background: rgb(0, 72, 255);
+}
+
+.etf-risk2 span {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100px;
+    height: 25px;
+    font-size: inherit;
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    background: red;
+}
+
+.etf-buy {
+    display: flex;
+    justify-content: center;
+}
+
+.etf-buy button {
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: inherit;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    background: rgb(0, 90, 208);
+}
+
+.etf-buy button:hover {
+    cursor: pointer;
+    background: rgb(37, 131, 255);
+}
+
+.buy-options-etf {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    padding-top: 40px;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid rgb(0, 66, 152);
+}
+
+#buy-etf {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+#buy-etf img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#buy-etf h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+#buy-etf label {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+#buy-etf input {
+    margin-left: 10px;
+    outline: none;
+    width: 250px;
+    height: 30px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 192, 0);
+    color: white;
+}
+
+#buy-etf p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(29, 255, 161);
+}
+
+
+
+/*PRODUCTS.HTML*/
+
+
+
+.beverly-image {
+    width: 100%;
+    position: relative;
+}
+
+.beverly-image img {
+    width: 100%;
+    filter: brightness(0.4);
+}
+
+.beverly-banner {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    margin-top: -600px;
+}
+
+.beverly-title h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.beverly-desc p {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.beverly-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 560px;
+    margin-left: 80px;
+}
+
+.beverly-price h2 {
+    font-size: 26px;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.beverly-price h3 {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(127, 255, 112);
+}
+
+.beverly-price button {
+    width: 200px;
+    height: 40px;
+    background: #0047b2;
+    border: none;
+    color: white;
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.beverly-price button:hover {
+    cursor: pointer;
+    background: #002e74;
+}
+
+.beverly-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.xfg {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.xfg:hover {
+    border-color: #0047b2;
+    cursor: pointer;
+}
+
+.xfg p {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    background: none;
+    margin-top: 35px;
+}
+
+.xfg img {
+    display: flex;
+    width: 90px;
+    margin-top: 12px;
+}
+
+.iphone-banner {
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(9,27,65);
+    background: linear-gradient(0deg, rgba(9,27,65,1) 21%, rgba(17,26,44,1) 100%);
+    width: 100%;
+    margin-top: -5px;
+}
+
+.capitalization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.capitalization h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.capitalization span {
+    font-size: 44px;
+    color: #0047b2;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.capitalization img {
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.iphone-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-iphone {
+    width: 500px;
+    margin-left: 10px;
+}
+
+.img-iphone img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-iphone {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    max-width: 360px;
+    color: white;
+    font-family: sans-serif;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.text-iphone h1 {
+    font-size: 34px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.text-iphone h3 {
+    font-size: 28px;
+    font-family: sans-serif;
+    color: rgb(127, 255, 112);
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.text-iphone h5 {
+    font-size: 18px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-iphone button {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.text-iphone button:hover {
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+}
+
+#js-iphone {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.docks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.docks p {
+    font-size: 22px;
+}
+
+.docks span {
+    font-size: 12px;
+    color: rgb(127, 255, 112);
+    margin-left: 8px;
+}
+
+.docks input {
+    margin-left: 12px;
+    width: 100px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0047b2;
+    background: none;
+    color: gray;
+    font-size: inherit;
+}
+
+.docks-dividend,
+.docks-prizes {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.docks-sorter {
+    display: grid;
+    place-content: center;
+    margin-top: 40px;
+    margin-left: 0;
+    width: 230px;
+    height: 50px;
+    background: rgb(255, 49, 49);
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+    border: 2px solid transparent;
+}
+
+.docks-sorter:hover {
+    cursor: pointer;
+    border-color: white;
+}
+
+/*--FOOTER--*/
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: black;
+}
+
+.cont-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cont-logo h1 {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.cont-logo h1 span {
+    color: rgb(0,60,152);
+}
+
+.cont-column {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+
+.cont-column h1 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.cont-column p {
+    margin-bottom: 5px;
+}
+
+.cont-double {
+    display: block;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -18px;
+    max-width: 200px;
+}
+.social-media img {
+    width: 30px;
+}
+
+.social-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 25px;
+}
+
+.social-input input {
+    width: 320px;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: inherit;
+    padding-left: 10px;
+    background: white;
+}
+
+.social-input button {
+    width: 110px;
+    height: 38px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(0,60,152);
+    color: white;
+    font-size: inherit;
+    margin-left: 16px;
+    border: 2px solid transparent;
+}
+
+.social-input button:hover {
+    border-color: white;
+    cursor: pointer;
+}

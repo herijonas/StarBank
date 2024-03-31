@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>StarBank</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    </head>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+            <h1>Star<span>Bank</span></h1>
+        </div>
+        <div class="nav-options">
+            <p>For you </p>
+            <div class="bar-for"></div>
+            <p> For your company</p>
+        </div>
+        <div class="bar"></div>
+        <div class="input-header">
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+        <div class="account">
+            <a href="login.html"><button>My account</button></a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="superior">
+            <a href="index.html">
+                <p>For customer</p>
+            </a>
+            <a href="invests.html">
+                <p>Investments</p>
+            </a>
+            <p>Agencies</p>
+            <a href="products.html">
+                <p>Products and services</p>
+            </a>
+            <p>Open finance</p>
+        </div>
+            
+        <div class="beverly-image">
+            <img src="images/beverly.jpg" alt="">
+        </div>
+        <div class="beverly-banner">
+            <div class="beverly-content">
+                <div class="beverly-title">
+                    <h1>Beverly Consortium</h1>
+                </div>
+                <div class="beverly-desc">
+                    <p>Become an owner of one of the largest banking consortiums in the world.</p>
+                </div>
+                <div class="beverly-price">
+                    <h2>U$ 400.000</h2><h3>*Starting bids*</h3><button>Entry now</button>
+                </div>
+            </div>
+            <div class="beverly-buttons">
+                <div class="xfg">
+                    <p>Smart Pool</p>
+                    <img src="assets/pool.svg" alt="">
+                </div>
+                <div class="xfg">
+                    <p>Automated Home</p>
+                    <img src="assets/home.svg" alt="">
+                </div>
+                <div class="xfg">
+                    <p>Personal Driver</p>
+                    <img src="assets/tesla.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="iphone-banner">
+            <div class="capitalization">
+                <h1>Capitalization Union - Star<span>Bank</span><img src="assets/apple.svg" alt=""></h1>
+            </div>
+            <div class="iphone-all">
+                <div class="img-iphone">
+                    <img src="images/iphone 15.png" alt="">
+                </div>
+                <div class="text-iphone">
+                    <h1>iPhone 15 Pro</h1>
+                    <h3>U$ 890</h3>
+                    <h5>The best phone is here! Buy now one of our
+                        Capitalization Union on StarBank Apple products 
+                        and achieve this prize.
+                    </h5>
+                    <button onclick="showDiv()">Do an initial dock</button>
+                </div>
+                <div id="js-iphone">
+                    <div class="docks">
+                        <p>Amount dock: </p> 
+                        <input type="number" id="amountDock" placeholder="Bid in U$$" required>
+                        <span>Currently tax: 1,75% a.a</span>
+                    </div>
+                    <div class="docks-dividend">
+                        <p>Total returns with taxes: <span id="taxReturn">0</span></p>
+                    </div>
+                    <div class="docks-prizes">
+                        <p>Entitled to get prizes? <span id="answerReturn"></span></p>
+                    </div>
+                    <div class="docks-sorter">
+                        <h1>Prizes Sorter</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="cont-logo">
+                    <h1>Star<span>Bank</span></h1>
+                </div>
+                <div class="cont-column">
+                    <h1>Download</h1>
+                    <p>Windows app</p>
+                    <p>Mac app</p>
+                    <p>Linux app</p>
+                    <p>Desktop app</p>
+                </div>
+                <div class="cont-column">
+                    <h1>Products</h1>
+                    <p>Open finance</p>
+                    <p>Capitalization</p>
+                    <p>Investments</p>
+                    <p>Credit market</p>
+                </div>
+                <div class="cont-double">
+                    <div class="social-media">
+                        <img src="assets/twitter-svgrepo-com.svg" alt="">
+                        <img src="assets/linkedin-svgrepo-com.svg" alt="">
+                        <img src="assets/instagram-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="social-input">
+                        <input type="text" placeholder="Enter e-mail address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="showDiv.js"></script>
+        <script src="iphone-taxes.js"></script>
+
+    </main>
+
+</html>
